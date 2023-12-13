@@ -28,7 +28,7 @@ export default function Meals() {
     data: loadedMeals,
     isLoading,
     error,
-  } = useHttp("http://localhost:3000/meals", requestConfig, []);
+  } = useHttp(url, requestConfig, []);
 
   if (isLoading) return <p className="center">Data is being fetched...</p>;
 
