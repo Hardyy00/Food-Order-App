@@ -26,7 +26,7 @@ export default function CheckOut() {
     error,
     sendRequest,
     resetData,
-  } = useHttp("http://localhost:3000/orders", requestConfig);
+  } = useHttp("https://react-food-backend-m6fy.onrender.com/orders", requestConfig);
 
   const totalAmount = ctx.items.reduce(
     (acc, item) => acc + item.quantity * item.price,
